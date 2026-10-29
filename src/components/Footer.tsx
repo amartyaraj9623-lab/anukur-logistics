@@ -4,6 +4,7 @@ import {
 } from 'lucide-react';
 import { useState } from 'react';
 import { MessageCircle, X } from 'lucide-react';
+import { DISPATCH_CHAT_URL } from '@/lib/whatsapp';
 
 const TRUST = [
   { icon: Award, label: 'ISO 9001:2015' },
@@ -118,7 +119,6 @@ export default function Footer() {
 
 export function FloatingWhatsApp() {
   const [open, setOpen] = useState(false);
-  const WHATSAPP = 'https://wa.me/919999999999?text=' + encodeURIComponent('Hi Ankur Logistics dispatch desk, I need assistance with a shipment.');
   return (
     <div className="fixed bottom-5 right-5 z-50 flex flex-col items-end gap-3">
       {open && (
@@ -143,7 +143,7 @@ export function FloatingWhatsApp() {
             Chat with our Delhi dispatch team for bookings, tracking, and instant quotes.
           </p>
           <a
-            href={WHATSAPP}
+            href={DISPATCH_CHAT_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 w-full bg-emerald-500 hover:bg-emerald-400 text-white text-sm font-bold py-2.5 rounded-xl transition-all hover:scale-[1.02]"

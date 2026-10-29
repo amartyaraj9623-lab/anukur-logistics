@@ -3,8 +3,7 @@ import {
   ArrowRight, ArrowLeft, Check, Globe, Building2, MapPin,
   Weight, Package, User, Phone, MessageCircle, Send,
 } from 'lucide-react';
-
-const WHATSAPP_NUMBER = '919999999999'; // business dispatch desk
+import { buildWhatsAppUrl } from '@/lib/whatsapp';
 
 const SCOPE_OPTIONS = [
   { key: 'domestic', label: 'Domestic India', icon: Building2, desc: 'Pan-India surface freight' },
@@ -68,11 +67,11 @@ export default function QuoteEngine() {
       '',
       '— Sent via ankurlogistics.in quote engine',
     ];
-    return encodeURIComponent(lines.join('\n'));
+    return lines.join('\n');
   };
 
   const submit = () => {
-    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${buildMessage()}`;
+    const url = buildWhatsAppUrl(buildMessage());
     setWaUrl(url);
     setSubmitted(true);
     window.open(url, '_blank', 'noopener,noreferrer');

@@ -6,6 +6,7 @@ import {
 import { useCurrency } from '@/context/CurrencyContext';
 import { formatPrice } from '@/lib/currency';
 import { calculateRate, RateInput, RateResult } from '@/lib/rateEngine';
+import { QUOTE_REQUEST_URL } from '@/lib/whatsapp';
 
 const TRUCK_TYPES: RateInput['truckType'][] = [
   'FTL - 32ft Multi-Axle', 'Container', 'LCV', 'Trailer',
@@ -73,7 +74,9 @@ export default function Hero() {
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <a
-                href="#quote"
+                href={QUOTE_REQUEST_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm font-bold text-midnight-900 bg-ember-500 hover:bg-ember-400 px-5 py-3 rounded-xl shadow-ember-glow transition-all hover:scale-[1.03]"
               >
                 Request a Quote
