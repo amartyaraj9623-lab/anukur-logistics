@@ -71,15 +71,21 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-white/65">
               <li className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-ember-500 mt-0.5 shrink-0" />
-                <span>Bawana Logistics Hub, Sector 5,<br />Bawana Industrial Area, New Delhi 110039</span>
+                <span>WZ-3, Om Vihar Phase 1, Uttam Nagar,<br />New Delhi - 110059</span>
               </li>
-              <li className="flex items-center gap-2.5">
-                <Phone className="w-4 h-4 text-ember-500 shrink-0" />
-                <a href="tel:+911146460000" className="hover:text-white transition-colors">24/7 Hotline: +91 11 4646 0000</a>
+              <li className="flex flex-col gap-1.5">
+                <a href="tel:+919971247272" className="flex items-center gap-2.5 hover:text-white transition-colors">
+                  <Phone className="w-4 h-4 text-ember-500 shrink-0" />
+                  +91 99712 47272
+                </a>
+                <a href="tel:+917979894243" className="flex items-center gap-2.5 hover:text-white transition-colors">
+                  <Phone className="w-4 h-4 text-ember-500 shrink-0" />
+                  +91 79798 94243
+                </a>
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-ember-500 shrink-0" />
-                <a href="mailto:dispatch@ankurlogistics.in" className="hover:text-white transition-colors">dispatch@ankurlogistics.in</a>
+                <a href="mailto:ankurlogistics007@gmail.com" className="hover:text-white transition-colors">ankurlogistics007@gmail.com</a>
               </li>
               <li className="flex items-center gap-2.5">
                 <Clock className="w-4 h-4 text-ember-500 shrink-0" />
@@ -105,7 +111,7 @@ export default function Footer() {
         </div>
 
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/40">
-          <div>© {new Date().getFullYear()} Ankur Logistics Pvt. Ltd. · CIN U60300DL2015PTC281234 · GSTIN 07AAGCA1234F1Z5</div>
+          <div>© {new Date().getFullYear()} Ankur Logistics · GSTIN 07BTCPS9620L2Z5</div>
           <div className="flex items-center gap-4">
             <a href="#" className="hover:text-white transition-colors">Privacy</a>
             <a href="#" className="hover:text-white transition-colors">Terms</a>

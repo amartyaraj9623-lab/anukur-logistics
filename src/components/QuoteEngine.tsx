@@ -65,7 +65,7 @@ export default function QuoteEngine() {
       `Phone: ${form.phone}`,
       `Company: ${form.company}`,
       '',
-      '— Sent via ankurlogistics.in quote engine',
+      '— Sent via Ankur Logistics website',
     ];
     return lines.join('\n');
   };
