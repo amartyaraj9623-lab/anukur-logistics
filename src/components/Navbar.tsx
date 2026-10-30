@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Truck, Plane, Ship, Menu, X, Phone } from 'lucide-react';
 import { useCurrency } from '@/context/CurrencyContext';
-import { QUOTE_REQUEST_URL } from '@/lib/whatsapp';
 
 const LINKS = [
   { label: 'Domestic Network', href: '#services' },
@@ -103,9 +102,7 @@ export default function Navbar() {
               Track Consignment
             </a>
             <a
-              href={QUOTE_REQUEST_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#quote"
               className="hidden sm:inline-flex items-center gap-1.5 text-[12px] font-bold text-midnight-900 bg-ember-500 hover:bg-ember-400 px-4 py-2 rounded-lg shadow-ember-glow transition-all hover:scale-[1.03]"
             >
               Request a Quote
@@ -144,9 +141,7 @@ export default function Navbar() {
               Track Consignment
             </a>
             <a
-              href={QUOTE_REQUEST_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#quote"
               onClick={() => setOpen(false)}
               className="mt-1 px-3 py-2.5 rounded-lg text-center text-sm font-bold text-midnight-900 bg-ember-500"
             >

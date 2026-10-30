@@ -4,6 +4,7 @@ import Ticker from '@/components/Ticker';
 import Hero from '@/components/Hero';
 import Tracking from '@/components/Tracking';
 import Services from '@/components/Services';
+import OperationsGallery from '@/components/OperationsGallery';
 import Fleet from '@/components/Fleet';
 import QuoteEngine from '@/components/QuoteEngine';
 import Footer, { FloatingWhatsApp } from '@/components/Footer';
@@ -18,6 +19,7 @@ function App() {
           <Ticker />
           <Tracking />
           <Services />
+          <OperationsGallery />
           <Fleet />
           <QuoteEngine />
         </main>
